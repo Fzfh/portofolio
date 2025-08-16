@@ -74,14 +74,16 @@ a {
 /* Buttons */
 .btn {
   padding: 1rem 1.5rem;
-  background: white;
-  border: 1.5px solid var(--borderColor);
+  color: white;
+  background: #7e74f1;
+  border: 1.5px solid var(--primaryTextColor);
+  border-radius: 0.2rem;
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
 
 .btn:hover {
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px;
 }
 
 /* Titles */
@@ -157,7 +159,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--primaryTextColor);
+  color: white;
 }
 
 /* Burger - Save for later on video */
