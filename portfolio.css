@@ -74,16 +74,14 @@ a {
 /* Buttons */
 .btn {
   padding: 1rem 1.5rem;
-  color: white;
-  background: #7e74f1;
-  border: 1.5px solid var(--primaryTextColor);
-  border-radius: 0.2rem;
+  background: white;
+  border: 1.5px solid var(--borderColor);
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
 
 .btn:hover {
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 
 /* Titles */
@@ -96,6 +94,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   color: var(--secondaryTextColor);
+  position: relative;
   padding-left: 40px;
   width: fit-content;
   font-weight: 400;
@@ -129,57 +128,8 @@ a {
   background: linear-gradient(to right, #7e74f1,#5d51e8, #7e74f1);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 2rem 0;
-}
-
-@media screen and (max-width:600px) {
-  .btn{
-    display: none;
-  }
-  .nav{
-    align-items: center;
-    padding: 1rem 0;
-  }
-  nav ul {
-    font-size: 8pt;
-    gap: 3px;
-  }
-  .pre-title{
-    font-size: 0.7rem;
-    letter-spacing: 0.2rem;
-  }
-  .hero-left .hero-name{
-    font-size: 2rem;
-  }
-  .hero-left p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media screen and (max-width:550px) {
-  .btn{
-    display: none;
-  }
-  .nav{
-    align-items: center;
-    padding: 1rem 0;
-  }
-  nav ul {
-    font-size: 8pt;
-    gap: 3px;
-  }
-  .pre-title{
-    font-size: 0.7rem;
-    letter-spacing: 0.2rem;
-  }
-  .hero-left .hero-name{
-    font-size: 2rem;
-  }
-  .hero-left p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
 }
 
 nav ul {
@@ -196,9 +146,8 @@ nav ul {
   font-size: 2rem;
 }
 
-.logo a svg {
-  width: 150%;
-  padding-left: 1rem;
+.logo a {
+  color: var(--primaryTextColor);
 }
 
 /* Navigation Menu */
@@ -208,7 +157,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: var(--primaryTextColor);
 }
 
 /* Burger - Save for later on video */
@@ -316,7 +265,7 @@ nav ul li a {
 .portfolio {
   border-radius: var(--itemBorderRadius);
   overflow: hidden; /* supaya gambar yang diatas itu dia ngikut border radiusnya, karena yang dikasih border radius disini adalah div portfolio ini */
-  border: 3px solid var(--borderColor);
+  border: 1px solid var(--borderColor);
 }
 
 .portfolio-cover {
@@ -398,8 +347,7 @@ nav ul li a {
 .education .line div {
   width: 2px;
   height: 100%;
-  background: grey;
-  z-index: 1;
+  background: var(--borderColor);
   position: relative;
 }
 
@@ -416,7 +364,7 @@ nav ul li a {
   content: "";
   width: 15px;
   height: 15px;
-  background: grey;
+  background: var(--borderColor);
   border-radius: 50%;
   position: absolute;
   left: -6px;
